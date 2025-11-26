@@ -1,0 +1,39 @@
+name: routing_mang
+description: "A new Flutter project."
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.1 <4.0.0' # تم تعديل صيغة الـ SDK لتكون أحدث وأكثر دقة
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+  # 🔑 حزمة go_router لإدارة التوجيه
+  go_router: ^14.0.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  # 📝 تم تصحيح تنسيق YAML لتعريف الخطوط
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf # يجب التأكد من وجود مسار الخط الصحيح هنا
+
+  # ملاحظة: يجب أن يكون ملف الخط (Cairo-Regular.ttf) موجودًا في المسار: assets/fonts/
+  # لتضمين مجلد الخطوط، يجب عليك إضافة قسم assets:
+  # assets:
+  #   - assets/fonts/
